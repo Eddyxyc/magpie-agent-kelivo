@@ -37,6 +37,17 @@ magpie plugin add D:\Plugin\Magpie_Kelivo
 
 或打开 Magpie → **Plugins** → **Add a plugin** → 选择这个文件夹。
 
+### 从私有 GitHub 仓库安装
+
+Bun 安装 `owner/repo` 时会请求 GitHub 的匿名 tarball 地址，私有仓库会返回 404。先在本地克隆，再按路径安装：
+
+```
+git clone https://github.com/Eddyxyc/magpie-agent-kelivo.git D:\Plugin\Magpie_Kelivo
+magpie plugin add D:\Plugin\Magpie_Kelivo
+```
+
+之后更新用 `git pull`，然后在 Magpie 的 Plugins 里把插件关掉再打开（Bun 部分不会热重载）。
+
 安装后：
 
 ```
