@@ -1,6 +1,6 @@
 {
   "name": "magpie-agent-kelivo",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Kelivo as a Magpie agent: pick one of Magpie's models on the Agents page and the plugin writes Magpie's gateway into Kelivo's own database",
   "type": "module",
   "main": "./index.mjs",
