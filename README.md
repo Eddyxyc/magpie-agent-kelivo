@@ -128,7 +128,20 @@ magpie plugin rm D:\Plugin\Magpie_Kelivo
 
 ## 排查
 
-查看插件状态：
+**Agents 页没有 Kelivo**
+
+插件安装后，Agent 定义会在 1 秒内重新加载；但已经打开的 Magpie 窗口可能还显示旧列表。关掉 Magpie 窗口再打开（或退出 Magpie 托盘后重新启动）即可。
+
+可以用命令行确认：
+
+```
+magpie ls        # 应出现 Kelivo 一行
+magpie kelivo    # 显示 Kelivo 的配置文件和当前模型
+```
+
+如果 `magpie ls` 有 Kelivo 而窗口里没有，就是窗口缓存，重启窗口即可。
+
+**查看插件状态**
 
 ```
 magpie plugin

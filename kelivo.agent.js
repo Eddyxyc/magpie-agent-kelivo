@@ -9,6 +9,11 @@ export const agent = {
   name: "Kelivo",
   icon: "https://raw.githubusercontent.com/Chevey339/kelivo/master/assets/icons/kelivo.png",
   // The file Magpie edits. It is a bridge, not one of Kelivo's own files.
+  // The Agents page only draws a plugin agent it finds on this computer. The
+  // bridge file does not exist until a model is picked, and Kelivo's data
+  // folder is different on each OS, so use home (always present) to keep the
+  // row visible once the plugin is installed.
+  dir: "~",
   config: "~/.config/magpie/kelivo-agent.json",
   format: "json",
   model: "model",
