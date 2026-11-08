@@ -1,0 +1,32 @@
+{
+  "name": "magpie-agent-kelivo",
+  "version": "0.1.0",
+  "description": "Kelivo as a Magpie agent: pick one of Magpie's models on the Agents page and the plugin writes Magpie's gateway into Kelivo's own database",
+  "type": "module",
+  "main": "./index.mjs",
+  "files": [
+    "kelivo.agent.js",
+    "index.mjs",
+    "bridge.mjs",
+    "kelivo.mjs",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "magpie",
+    "magpie-agent",
+    "kelivo",
+    "llm-gateway"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "bun test"
+  },
+  "magpie": {
+    "agent": "./kelivo.agent.js",
+    "icon": "https://raw.githubusercontent.com/Chevey339/kelivo/master/assets/icons/kelivo.png"
+  }
+}
